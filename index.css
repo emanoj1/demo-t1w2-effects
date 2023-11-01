@@ -1,0 +1,16 @@
+#first {
+    height:100px;
+    width:100px;
+    background-color: red;
+    transition: 2s;
+    
+}
+/*The above creates a box in red, where efefcts take 2 seconds to execute*/
+
+#first:hover {
+    /*height: 200px;
+    width:200px;*/
+    transform: scale(2) translate(50px, 50px) rotate(360deg);
+    background-color: aqua;
+}
+/*The above creates a hover trigger*/
