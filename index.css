@@ -43,7 +43,7 @@ img {
     background-color: red;
     animation-name:animation-for-redbox2;
     animation-duration: 0.5s;
-    animation-iteration-count: 2;
+    animation-iteration-count:2;
 }
 
 @keyframes animation-for-redbox2 {
@@ -67,7 +67,7 @@ img {
 
 #typing-effect {
     font: size 24px;
-    animation: typing-animation .5s infinite, change-width 2s steps(30, end) 1;
+    animation: typing-animation .5s infinite, change-width 2s steps(30, end) infinite;
     /* animation-duration: 2s; /* to blink the right border
     animation-iteration-count: infinite; continuously blink the right border*/
     white-space: nowrap;
@@ -108,6 +108,7 @@ img {
 
 .class1 {
     font-size: 2em;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
