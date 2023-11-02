@@ -62,7 +62,7 @@ img {
 }
 
 .parent-typing-effect{
-    display: flex;
+    display: flex; /*This is added so that it doesn't take up the whole space like a div*/
 }
 
 #typing-effect {
@@ -96,4 +96,20 @@ img {
     75% {
         width: 100%;
     }
+}
+
+.typography {
+    margin: 100px;
+    text-align: center;
+    font-size: 2rem; /* em = 16px, em is relative to the immediate parent font size and rem is relative to the root font size */
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.class1 {
+    font-size: 2em;
+}
+
+body {
+    font-size: 16px;
 }
