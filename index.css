@@ -36,8 +36,24 @@ img {
     transition: 0.5s;
 }
 
-.second {
+#second {
+    margin:50px;
     width:100px;
     height:100px;
     background-color: red;
+    animation-name:animation-for-redbox2;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+}
+
+@keyframes animation-for-redbox2 {
+    0% {
+        width:100px;
+    }
+    50% {
+        width:200px;
+    }
+    100% {
+        width:100px;
+    }
 }
