@@ -14,3 +14,30 @@
     background-color: aqua;
 }
 /*The above creates a hover trigger*/
+
+img {
+    width:200px;
+}
+
+.card-parent {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    border: 1px solid red;
+    border-radius: 20px;
+    overflow:hidden; /*text won't go outside of the parent*/
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 5px black;
+    transition: 0.5s;
+}
+
+.second {
+    width:100px;
+    height:100px;
+    background-color: red;
+}
