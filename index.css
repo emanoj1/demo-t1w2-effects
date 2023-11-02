@@ -42,7 +42,7 @@ img {
     height:100px;
     background-color: red;
     animation-name:animation-for-redbox2;
-    animation-duration: 5s;
+    animation-duration: 0.5s;
     animation-iteration-count: 2;
 }
 
@@ -53,7 +53,47 @@ img {
     50% {
         width:200px;
     }
+    75% {
+        width:300px;
+    }
     100% {
         width:100px;
+    }
+}
+
+.parent-typing-effect{
+    display: flex;
+}
+
+#typing-effect {
+    font: size 24px;
+    animation: typing-animation .5s infinite, change-width 2s steps(30, end) 1;
+    /* animation-duration: 2s; /* to blink the right border
+    animation-iteration-count: infinite; continuously blink the right border*/
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typing-animation {
+    0% {
+        border-right: none;
+    }
+    /*50% {
+        border-right: 2px solid black;
+        /*border-bottom: 3px solid red;
+        border-top: 3px solid red;
+    }*/
+
+    100% {
+        border-right: 2px solid black;
+    }
+}
+
+@keyframes change-width {
+    0% {
+        width: 0;
+    }
+    75% {
+        width: 100%;
     }
 }
